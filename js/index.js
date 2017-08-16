@@ -62,7 +62,7 @@ function fnLoad(){
 	var oTimer = 0;
 	var oImg = new Image();
 	var num = 0;
-
+	var a;
 	xunlei();
 
 	bind(oW,'webkitTransitionEnd',fn);
