@@ -44,13 +44,12 @@ function removeClass(obj, sClass) {
 function fnLoad(){
 	var iTime = new Date().getTime();
 	var oW = id('welcome');
-	var arr=['https://i02.pictn.sogoucdn.com/5837f08265c34e23',
+	var arr=[
 		'https://i01.pictn.sogoucdn.com/415d9981143db5cc',
 		'https://i02.pictn.sogoucdn.com/0ac4e19e9bd17eed',
 		'https://i02.pictn.sogoucdn.com/7fc05ae993f7dc3c',
 		'https://i04.pictn.sogoucdn.com/ee232bb85be15a71',
 		'https://i03.pictn.sogoucdn.com/0abc23ae1fcce17c',
-		'https://i02.pictn.sogoucdn.com/5837f08265c34e23',
 		'https://i01.pictn.sogoucdn.com/415d9981143db5cc',
 		'https://i02.pictn.sogoucdn.com/0ac4e19e9bd17eed',
 		'https://i02.pictn.sogoucdn.com/7fc05ae993f7dc3c',
@@ -62,7 +61,7 @@ function fnLoad(){
 	var oTimer = 0;
 	var oImg = new Image();
 	var num = 0;
-	
+
 	xunlei();
 
 	bind(oW,'webkitTransitionEnd',fn);
