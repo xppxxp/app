@@ -56,7 +56,7 @@ function fnLoad(){
 		'https://i04.pictn.sogoucdn.com/ee232bb85be15a71',
 		'https://i03.pictn.sogoucdn.com/0abc23ae1fcce17c'
 		];*/
-	var oImgLoad = false;
+	/*var oImgLoad = false;*/
 	var oTime = false;
 	var oTimer = 0;
 	var oImg = new Image();
@@ -68,10 +68,10 @@ function fnLoad(){
 	bind(oW,'transitionEnd',fn);
 
 	oTimer = setInterval(function(){
-		if (new Date().getTime()-iTime>5000) {
+		if (new Date().getTime()-iTime>3000) {
 			oTime = true;
 		}
-		if (oImgLoad&&oTime) {
+		if (oTime) {
 			oW.style.opacity = 0;
 			clearInterval(oTimer);
 		}
