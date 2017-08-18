@@ -68,7 +68,7 @@ function fnLoad(){
 	bind(oW,'transitionEnd',fn);
 
 	oTimer = setInterval(function(){
-		if (new Date().getTime()-iTime>3000) {
+		if (new Date().getTime()-iTime>6000) {
 			oTime = true;
 		}
 		if (oTime) {
